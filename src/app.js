@@ -5,6 +5,7 @@ const config = require('./config')
 
 config()
 
+app.use(express.json())
 app.use('/api',apiRouter)
 
 app.listen(process.env.APP_PORT)

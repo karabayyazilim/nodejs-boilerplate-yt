@@ -1,0 +1,27 @@
+### GET request with a header
+GET http://localhost:3000/api/user
+Accept: application/json
+
+###
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+  "fullName": "Ali Karabay",
+  "email": "test1@test.com",
+  "password": "12345"
+}
+
+###
+PUT http://localhost:3000/api/user/633f6b6ae871410405fde955
+Content-Type: application/json
+
+{
+  "fullName": "Mehmet",
+  "email": "test2@test.com",
+  "password": "12345"
+}
+
+###
+DELETE http://localhost:3000/api/user/633f6b6ae871410405fde955
+Content-Type: application/json
