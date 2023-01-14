@@ -1,5 +1,6 @@
 ### GET request with a header
 GET http://localhost:3000/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCIkX18iOnsiYWN0aXZlUGF0aHMiOnsicGF0aHMiOnsiX2lkIjoiaW5pdCIsImZ1bGxOYW1lIjoiaW5pdCIsImVtYWlsIjoiaW5pdCIsInBhc3N3b3JkIjoiaW5pdCIsImNyZWF0ZWRBdCI6ImluaXQiLCJ1cGRhdGVkQXQiOiJpbml0IiwiX192IjoiaW5pdCJ9LCJzdGF0ZXMiOnsiaW5pdCI6eyJfaWQiOnRydWUsImZ1bGxOYW1lIjp0cnVlLCJlbWFpbCI6dHJ1ZSwicGFzc3dvcmQiOnRydWUsImNyZWF0ZWRBdCI6dHJ1ZSwidXBkYXRlZEF0Ijp0cnVlLCJfX3YiOnRydWV9fX0sInNraXBJZCI6dHJ1ZX0sIiRpc05ldyI6ZmFsc2UsIl9kb2MiOnsiX2lkIjoiNjNjMjIwYWVkZWY3MzdmMTU2ZTc5MGY1IiwiZnVsbE5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoidGVzdDFAYXNjYS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiY3JlYXRlZEF0IjoiMjAyMy0wMS0xNFQwMzoyNTozNC43ODRaIiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xNFQwMzoyNTozNC43ODRaIiwiX192IjowfSwiaWF0IjoxNjczNjY4OTU5LCJleHAiOjE2NzQyNzM3NTl9.JwbasKUOGU1zxTGoMLOe0e8OrOWAJgOctIF_ZdXmzgQ
 Accept: application/json
 
 ###
@@ -7,8 +8,8 @@ POST http://localhost:3000/api/user
 Content-Type: application/json
 
 {
-  "fullName": "Ali Karabay",
-  "email": "test1@test.com",
+  "fullName": "John Doe",
+  "email": "test1@asca.com",
   "password": "12345"
 }
 
@@ -25,3 +26,12 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/api/user/633f6b6ae871410405fde955
 Content-Type: application/json
+
+### login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test1@asca.com",
+  "password": "12345"
+}
